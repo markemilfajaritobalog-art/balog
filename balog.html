@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Emil Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #112138;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background-color: #112138;
+            border-bottom: 1px solid #22364f;
+        }
+        .logo {
+            font-weight: bold;
+            font-size: 1.5rem;
+            font-style: italic;
+            color: #45e6c3;
+            letter-spacing: 1.5px;
+        }
+        nav a {
+            color: #a8d0e6;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #45e6c3;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 60px 30px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .profile-pic {
+            flex-shrink: 0;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #45e6c3;
+        }
+        .intro-text {
+            max-width: 600px;
+        }
+        .intro-text h1 {
+            margin: 0 0 15px 0;
+            font-weight: normal;
+            color: #cadee7;
+        }
+        .highlight-name {
+            color: #45e6c3;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.3rem;
+            color: white;
+            font-weight: 600;
+        }
+        section {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 30px;
+            color: #cadee7;
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+        section h2 {
+            background-color: #21314f;
+            color: #45e6c3;
+            padding: 8px 15px;
+            display: inline-block;
+            font-family: monospace;
+            margin-bottom: 15px;
+        }
+        .skills-icons {
+            display: flex;
+            gap: 30px;
+            justify-content: start;
+        }
+        .skills-icons img {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">EMIL</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <img src="profile.jpg" alt="Mark Emil Balog" class="profile-pic" />
+            <div class="intro-text">
+                <h1>Hi, I Am</h1>
+                <h2 class="highlight-name">Mark Emil Balog</h2>
+                <p class="subtitle">You're Full-stack Developer</p>
+            </div>
+        </div>
+
+        <section>
+            <h2>About Me</h2>
+            <p>
+                I am Mark Emil Balog. I am currently living in Lipa City, Batangas. 
+                I graduated from STI College Lipa under the strand MAWD (Mobile App and Web Development). 
+                I am now a 2nd-year student at BSU Lipa, taking up Bachelor of Computer Engineering Technology.
+            </p>
+            <p>
+                I have experience in programming through academic projects and activities, particularly using Python and basic web development. 
+                I have worked on simple systems such as student management and scheduling programs, where I applied problem-solving and logical thinking skills.
+            </p>
+            <p>
+                I am continuously improving my knowledge by practicing coding and exploring new technologies to enhance my development skills.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <div class="skills-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++ Logo" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python Logo" />
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Csharp_Logo.png" alt="C# Logo" />
+            </div>
+        </section>
+    </main>
+</body>
+</html>
