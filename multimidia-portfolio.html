@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Emil Balog Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #0b1e33;
+            color: white;
+        }
+
+        /* NAVBAR */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            background-color: #102943;
+            position: sticky;
+            top: 0;
+        }
+
+        nav h1 {
+            color: #4fd1c5;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #4fd1c5;
+            text-decoration: none;
+        }
+
+        /* HERO */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero img {
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #4fd1c5;
+        }
+
+        .hero-text h2 {
+            font-size: 28px;
+        }
+
+        .hero-text h1 {
+            color: #4fd1c5;
+            font-size: 36px;
+        }
+
+        /* SECTION TITLE */
+        .section-title {
+            margin: 40px 50px 10px;
+            background: #1c3b5a;
+            display: inline-block;
+            padding: 10px 20px;
+            color: #4fd1c5;
+        }
+
+        /* ABOUT */
+        .about {
+            padding: 20px 50px;
+            line-height: 1.7;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .skills img {
+            width: 100px;
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px;
+            flex-wrap: wrap;
+        }
+
+        .project {
+            background: white;
+            color: black;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+        }
+
+        /* CONTACT */
+        .contact {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h1>EMIL</h1>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <img src="your-image.jpg" alt="Profile Picture">
+
+        <div class="hero-text">
+            <h2>Hi, I Am</h2>
+            <h1>Mark Emil Balog</h1>
+            <p>You’re Full-stack Developer</p>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <h2 class="section-title" id="about">About Me</h2>
+    <section class="about">
+        <p>
+            I am Mark Emil Balog. I am currently living in Lipa City, Batangas. I graduated from STI College Lipa under the strand MAWD (Mobile App and Web Development). I am now a 2nd-year student at BSU Lipa taking Bachelor of Computer Engineering Technology.
+        </p>
+        <br>
+        <p>
+            I have experience in programming through academic projects and activities, particularly using Python and basic web development. I have worked on systems such as student management and scheduling programs.
+        </p>
+        <br>
+        <p>
+            I am continuously improving my knowledge by practicing coding and exploring new technologies.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <h2 class="section-title" id="skills">Skills</h2>
+    <section class="skills">
+        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" alt="C++">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python">
+        <img src="https://cdn-icons-png.flaticon.com/512/6132/6132221.png" alt="C#">
+    </section>
+
+    <!-- PROJECTS -->
+    <h2 class="section-title" id="projects">Projects</h2>
+    <section class="projects">
+        <div class="project">Student Management System</div>
+        <div class="project">Calculator App</div>
+        <div class="project">Quiz System</div>
+    </section>
+
+    <!-- CONTACT -->
+    <h2 class="section-title" id="contact">Contacts</h2>
+    <section class="contact">
+        <p>📞 09924967714 / 091184575529</p>
+        <p>📧 markemilfajaritobalog@gmail.com</p>
+        <p>👤 Mark Emil Balog</p>
+    </section>
+
+</body>
+</html>
